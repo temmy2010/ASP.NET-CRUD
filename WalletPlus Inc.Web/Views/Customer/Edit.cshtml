@@ -1,0 +1,152 @@
+﻿@*@model Customer
+
+    <div class="row">
+        <form asp-action="Edit" asp-controller="Customer">
+            <div class="row mb-2">
+                <div class="col-6">
+                    <label class="col-2">FirstName</label>
+                    <input class="col-4" asp-for="FirstName"/>
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+
+                <div class="col-6">
+                    <label class="col-2">MiddleName</label>
+                    <input class="col-4" asp-for="MiddleName"/>
+                    <span asp-validation-for="MiddleName"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-6">
+                    <label class="col-2">Gender</label>
+                    <select class="col-4" asp-for="Gender">
+                        <option value="1">Female</option>
+                        <option value="2" selected>Male</option>
+                        <option value="3">Others</option>
+                        <span asp-validation-for="Gender"></span>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label class="col-2">MaritalStatus</label>
+                    <input class="col-4" asp-for="MaritalStatus"/>
+                    <span asp-validation-for="MaritalStatus"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                 <div class="col-6">
+                    <label class="col-2">DateOfBirth</label>
+                    <input class="col-4" asp-for="DateOfBirth"/>
+                    <span asp-validation-for="DateOfBirth"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-6">
+                    <label class="col-2">Country</label>
+                    <input class="col-4" asp-for="Country"/>
+                    <span asp-validation-for="Country"></span>
+                </div>
+
+                <div class="col-6">
+                    <label class="col-2">State</label>
+                    <input class="col-4" asp-for="State"/>
+                    <span asp-validation-for="State"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                 <div class="col-12">
+                    <label class="col-2">City</label>
+                    <input class="col-4" asp-for="City"/>
+                     <span asp-validation-for="City"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn-primary btn-sm" onclick="return confirm('Are you sure you want to save?')">Save Customer</button>
+            </div>
+        </form>
+    </div>*@
+
+
+
+@model Customer
+
+<div class="row">
+    <form asp-action="Edit" asp-controller="Customer">
+        <div class="row mb-2">
+            <div class="col-6">
+                <label class="col-2">FirstName</label>
+                <input class="col-4" asp-for="FirstName" />
+                <span asp-validation-for="FirstName"></span>
+            </div>
+
+            <div class="col-6">
+                <label class="col-2">LastName</label>
+                <input class="col-4" asp-for="LastName" />
+                <span asp-validation-for="LastName"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-6">
+                <label class="col-2">MiddleName</label>
+                <input class="col-4" asp-for="MiddleName" />
+                <span asp-validation-for="MiddleName"></span>
+            </div>
+            <div class="col-6">
+                <label class="col-2">Gender</label>
+                <select class="col-4" asp-for="Gender">
+                    <option value="1">Female</option>
+                    <option value="2" selected>Male</option>
+                    <option value="3">Others</option>
+                    <span asp-validation-for="Gender"></span>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-6">
+                <label class="col-2">MaritalStatus</label>
+                <input class="col-4" asp-for="MaritalStatus" />
+                <span asp-validation-for="MaritalStatus"></span>
+            </div>
+            <div class="col-6">
+                <label class="col-2">DateOfBirth</label>
+                <input class="col-4" asp-for="DateOfBirth" />
+                <span asp-validation-for="DateOfBirth"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-6">
+                <label class="col-2">Country</label>
+                <input class="col-4" asp-for="Country" />
+                <span asp-validation-for="Country"></span>
+            </div>
+
+            <div class="col-6">
+                <label class="col-2">State</label>
+                <input class="col-4" asp-for="State" />
+                <span asp-validation-for="State"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-6">
+                <label class="col-2">City</label>
+                <input class="col-4" asp-for="City" />
+                <span asp-validation-for="City"></span>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <button type="submit" class="btn-primary btn-sm" onclick="return confirm('Are you sure you want to save?')">Save Customer</button>
+        </div>
+    </form>
+</div>
+
